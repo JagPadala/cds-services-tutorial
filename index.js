@@ -101,7 +101,7 @@ app.post('/cds-services/patient-view-example', (request, response) => {
   console.log(`request`);
   console.log(request.body.prefetch);
   // Parse the request body for the Patient prefetch resource
-  const patientResource = request.body.prefetch.requestedPatient;
+  const patientResource = request.body.prefetch.patient;
   const patientViewCard = {
     cards: [
       {

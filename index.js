@@ -99,6 +99,7 @@ app.get('/cds-services', (request, response) => {
 app.post('/cds-services/patient-view-example', (request, response) => {
 
   console.log(`request`);
+  console.log(request.body);
   console.log(request.body.prefetch);
   // Parse the request body for the Patient prefetch resource
 

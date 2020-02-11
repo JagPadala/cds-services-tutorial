@@ -110,8 +110,8 @@ app.post('/cds-services/patient-view-example', (request, response) => {
         summary: 'Now seeing Tagnos: ' + patientResource.name[0].given[0] + ' ' + patientResource.name[0].family[0],
         indicator: 'info',
         source: {
-          label: 'CDS Service Tutorial',
-          url: 'https://github.com/cerner/cds-services-tutorial/wiki/Patient-View-Service'
+          label: 'Tagnos CDS',
+          url: 'https://cdsexample101.herokuapp.com/cds-services'
         },
         links: [
           {

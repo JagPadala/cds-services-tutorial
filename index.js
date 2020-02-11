@@ -107,8 +107,8 @@ app.post('/cds-services/patient-view-example', (request, response) => {
   if (typeof(request.body.prefetch.patient) !== 'undefined') {
     patientResource = request.body.prefetch.patient;
   }
-  if (typeof(request.body.prefetch.patientResouce) !== 'undefined') {
-    patientResource = request.body.prefetch.patientResouce;
+  if (typeof(request.body.prefetch.requestedPatient) !== 'undefined') {
+    patientResource = request.body.prefetch.requestedPatient;
   }
   const patientViewCard = {
     cards: [

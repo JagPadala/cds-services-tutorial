@@ -66,7 +66,7 @@ app.get('/cds-services', (request, response) => {
   const patientViewExample = {
     hook: 'patient-view',
     id: 'patient-view-example',
-    title: 'Example patient-view CDS Service',
+    title: 'Tagnos patient-view CDS Service',
     description: 'Displays the name of the patient',
     prefetch: {
       // Request the Patient FHIR resource for the patient in context, where the EHR fills out the prefetch template

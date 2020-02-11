@@ -84,7 +84,7 @@ app.get('/cds-services', (request, response) => {
   };
 
   const discoveryEndpointServices = {
-    services: [ patientViewExample, orderSelectExample ]
+    services: [ patientViewExample ]
   };
   response.send(JSON.stringify(discoveryEndpointServices, null, 2));
 });
@@ -112,9 +112,9 @@ app.post('/cds-services/patient-view-example', (request, response) => {
         },
         links: [
           {
-            label: 'Learn more about CDS Hooks',
-            url: 'http://cds-hooks.org',
-            type: 'absolute'
+            label: 'Smart App',
+            url: 'https://jagpadala.github.io/smart-on-fhir-tutorial/example-smart-app/launch.html',
+            type: 'smart'
           }
         ]
       }

@@ -123,6 +123,7 @@ app.post('/cds-services/patient-view-example', (request, response) => {
       }
     ]
   };
+  console.log(JSON.stringify(patientViewCard, null, 2));
   response.send(JSON.stringify(patientViewCard, null, 2));
 });
 

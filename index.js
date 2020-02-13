@@ -115,11 +115,13 @@ app.post('/cds-services/patient-view-example', (request, response) => {
       {
         // Use the patient's First and Last name
         summary: 'Now seeing Tagnos: ' + patientResource.name[0].given[0] + ' ' + patientResource.name[0].family[0],
-        indicator: 'info',
-        source: {
-          label: 'Tagnos CDS',
-          url: 'https://cdsexample101.herokuapp.com/cds-services'
-        }
+        indicator: 'warning',
+        detail: 'This is the patients third visit'
+        //,
+        //source: {
+        //  label: 'Tagnos CDS',
+        //  url: 'https://cdsexample101.herokuapp.com/cds-services'
+        //}
         //,
         //links: [
         //  {

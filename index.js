@@ -119,14 +119,15 @@ app.post('/cds-services/patient-view-example', (request, response) => {
         source: {
           label: 'Tagnos CDS',
           url: 'https://cdsexample101.herokuapp.com/cds-services'
-        },
-        links: [
-          {
-            label: 'Smart App',
-            url: 'https://jagpadala.github.io/smart-on-fhir-tutorial/example-smart-app/launch.html',
-            type: 'smart'
-          }
-        ]
+        }
+        //,
+        //links: [
+        //  {
+        //    label: 'Smart App',
+        //    url: 'https://jagpadala.github.io/smart-on-fhir-tutorial/example-smart-app/launch.html',
+        //    type: 'smart'
+        //  }
+        //]
       }
     ]
   };

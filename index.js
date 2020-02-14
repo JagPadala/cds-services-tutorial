@@ -16,6 +16,7 @@ app.use((request, response, next) => {
   response.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   response.setHeader('Access-Control-Expose-Headers', 'Origin, Accept, Content-Location, ' +
     'Location, X-Requested-With');
+  response.setHeader("Content-Type",'application/json; charset=utf-8');
 
   // Pass to next layer of middleware
   next();

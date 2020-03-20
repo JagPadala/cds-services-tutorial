@@ -117,7 +117,7 @@ app.post('/cds-services/patient-view-example', (request, response) => {
         // Use the patient's First and Last name
         summary: 'Now seeing Tagnos: ' + patientResource.name[0].given[0] + ' ' + patientResource.name[0].family[0],
         indicator: 'warning',
-        detail: 'This is the patients third visit'
+        detail: 'Patient has been moved to OR 101'
         //,
         //source: {
         //  label: 'Tagnos CDS',
